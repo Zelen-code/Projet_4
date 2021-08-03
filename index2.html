@@ -9,15 +9,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">    
 	<link rel="icon" type="image/ico" href="favicon.ico" />
     
-	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="./css/et-line.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="./css/et-line.css">
 	
     <script async src="https://kit.fontawesome.com/09901c5d6c.js" crossorigin="anonymous"></script>
-	<script async src="./js/jquery-2.1.0.min.js"></script>
-	<script async src="./js/bootstrap.min.js"></script>
-	<script async src="./js/blocs.min.js"></script>
+	<script async src="./js/jquery-2.1.0.js"></script>
+	<script async src="./js/bootstrap.js"></script>
+	<script async src="./js/blocs.js"></script>
 	<script async src="./js/jqBootstrapValidation.js"></script>
 	<script async src="./js/formHandler.js"></script>
     <title>La chouette agence | contact</title>
@@ -34,16 +34,18 @@
 <main class="page-container">
     
 <!-- bloc-0 -->
-<div class="bloc bgc-white l-bloc " id="bloc-0">
+<header class="bloc bgc-white l-bloc " id="bloc-0">
 	<div class="container bloc-sm">
 		<nav class="navbar row">
 			<div class="navbar-header">
-				<img src="img/la-chouette-agence-logo.png" alt="la chouette agence logo">				
-				<a href="index.html">Accueil</a>
+				<img class="la-chouette-logo" src="img/la-chouette-agence-logo.png" alt="la chouette agence logo">			
+				<div class="bouton-accueil">
+					<a href="index.html">Accueil</a>
+				</div>
 			</div>
 		</nav>
 	</div>
-</div>
+</header>
 <!-- bloc-0 END -->
 
 <!-- bloc-6 -->
@@ -71,25 +73,25 @@
 			<div class="col-sm-6">
 				<form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
 					<div class="form-group">
-						<label>
+						<label for="name">
 							Nom
 						</label>
 						<input id="name" class="form-control" required />
 					</div>
 					<div class="form-group">
-						<label>
+						<label for="email">
 							Adresse email
 						</label>
 						<input id="email" class="form-control" type="email" required />
 					</div>
 					<div class="form-group">
-						<label>
+						<label for="input_504">
 							Comment nous avez-vous connu ?
 						</label>
 						<input class="form-control" type="email" required id="input_504" />
 					</div>
 					<div class="form-group">
-						<label>
+						<label for="message">
 							Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
 						</label><textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
 					</div> 
@@ -108,43 +110,14 @@
 </div>
 <!-- bloc-7 END -->
 
-<!-- ScrollToTop Button -->
-<a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
-<!-- ScrollToTop Button END-->
-
-
 <!-- Footer - bloc-8 -->
-<div class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
-	<div class="container bloc-sm">
-		<div class="row">
-			<div class="col-sm-12">
-				<p class="text-center white">
-					La chouette agence - Agence web basée à Lyon.<br>
-				</p>
-				<div class="row row-no-gutters social">
-					<div class="col-sm-3">
-						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-twitter icon-md"></span></a>
-						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-facebook icon-md"></span></a>
-						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-dribbble icon-md"></span></a>
-						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-instagram icon-md"></span></a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+<div class="col-sm-12">
+	<p class="text-center white">La chouette agence - Agence web basée à Lyon</p>
+	<div class="row row-no-gutters social">
+		<i class="fab fa-twitter"></i>
+		<i class="fab fa-facebook-f"></i>
+		<i class="fab fa-dribbble"></i>
+		<i class="fab fa-instagram"></i>
 	</div>
 </div>
 <!-- Footer - bloc-8 END -->

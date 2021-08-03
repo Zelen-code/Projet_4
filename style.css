@@ -12,19 +12,42 @@ button {
 }
 
 .bloc {
-    width: 100%;
     clear: both;
     background: 50% 50% no-repeat;
     padding: 0 50px;
-    
     background-size: cover;
     position: relative;
 }
 
+.la-chouette-logo {
+    width: 20rem;
+}
 
 .bloc .container {
     padding-left: 0;
     padding-right: 0;
+}
+
+.bouton-accueil {
+    position: absolute;
+    right: 5rem;
+    top: 2rem;
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    #name.form-control {
+        width: 27rem;
+    }
+    #email.form-control {
+        width: 27rem;
+    }
+    #input_504.form-control {
+        width: 27rem;
+    }
+    #message.form-control {
+        width: 27rem;
+    }
 }
 
 .bloc-lg {
@@ -183,6 +206,7 @@ button {
 .l-bloc h6 a,
 .l-bloc p a {
 color: #000;
+text-decoration: none;
 }
 
 .d-bloc .panel .a-btn:hover,
@@ -217,6 +241,13 @@ color: #000;
 
 .voffset {
     margin-top: 30px;
+}
+
+.row {
+    text-align: left;
+    line-height: 2rem;
+    padding: 2rem;
+    font-size: 30px;
 }
 
 .voffset-lg {
@@ -303,6 +334,11 @@ color: #000;
 .nav-invert .navbar-brand {
     float: right;
     position: relative;
+}
+
+.text-center {
+    text-align: center;
+    font-size: medium;
 }
 
 @media (min-width: 768px) {
@@ -394,6 +430,7 @@ nav .caret {
 
 button {
     outline: none!important;
+    margin-top: 1rem;
 }
 
 .btn-rd {
@@ -440,6 +477,15 @@ button {
 .form-control {
     border-color: rgba(0, 0, 0, .1);
     box-shadow: none;
+    width: 34rem;
+}
+
+.form-group {
+    align-items: center;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .scrollToTop {
@@ -461,8 +507,8 @@ button {
 
 a[data-lightbox] {
     position: relative;
-    display: flex;
-    justify-content: center;
+    display: block;
+    text-align: center;
 }
 
 a[data-lightbox]:hover::before {
@@ -801,6 +847,7 @@ h4 {
     .site-navigation {
         position: inherit;
         transform: none;
+        display: none;
     }
     .nav > li {
         margin-top: 0;
@@ -843,10 +890,7 @@ h4 {
         max-height: 40px;
         width: auto;
     }
-    .navbar-header {
-        display: flex;
-        justify-content: space-around;
-    }
+    
     .nav-invert .navbar-toggle {
         float: left;
         margin-left: 10px;

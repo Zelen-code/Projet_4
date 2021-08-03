@@ -1752,7 +1752,7 @@ input[type=search] {
 }
 
 .form-group {
-    margin-bottom: 15px
+    margin-bottom: 15px;
 }
 
 .checkbox,
@@ -2774,10 +2774,6 @@ input[type=submit].btn-block {
     opacity: 1
 }
 
-.collapse {
-    display: none
-}
-
 .collapse.in {
     display: block
 }
@@ -3356,12 +3352,6 @@ textarea.input-group-sm>.input-group-btn>.btn {
     margin-left: -1px
 }
 
-.nav {
-    padding-left: 0;
-    margin-bottom: 0;
-    list-style: none
-}
-
 .nav>li {
     position: relative;
     display: block
@@ -3628,7 +3618,8 @@ textarea.input-group-sm>.input-group-btn>.btn {
     }
     .navbar-collapse.collapse {
         padding-bottom: 0;
-        overflow: visible !important
+        right: 4rem;
+        position: absolute;
     }
     .navbar-collapse.in {
         overflow-y: visible
