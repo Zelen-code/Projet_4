@@ -35,6 +35,10 @@ button {
     font-size: 16px;
 }
 
+.bouton-accueil:hover {
+    text-decoration: underline;
+}
+
 @media (max-width: 768px) {
     #name.form-control {
         width: 27rem;
@@ -245,7 +249,6 @@ text-decoration: none;
 
 .row {
     text-align: left;
-    line-height: 2rem;
     padding: 2rem;
     font-size: 30px;
 }
@@ -310,6 +313,7 @@ text-decoration: none;
 .nav > li a:hover,
 .nav > li a:focus {
     background: transparent;
+    text-decoration: underline;
 }
 
 .navbar-toggle {
@@ -522,6 +526,7 @@ a[data-lightbox]:hover::before {
     background: rgba(0, 0, 0, .6);
     color: #FFF;
     font-weight: 100;
+    z-index: 1;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -712,11 +717,14 @@ h4 {
 
 .portfolio-thumb {
     margin-bottom: 24px;
+    width: 25rem;
+    height: 25rem;
 }
 
 .portfolio-row {
     margin-bottom: 44px;
     margin-top: 50px;
+    display: flex;
 }
 
 .avatar {
