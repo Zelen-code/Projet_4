@@ -719,12 +719,14 @@ h4 {
     margin-bottom: 24px;
     width: 25rem;
     height: 25rem;
+    width: 100%;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
 }
 
 .portfolio-row {
     margin-bottom: 44px;
     margin-top: 50px;
-    display: flex;
 }
 
 .avatar {
